@@ -1,6 +1,7 @@
 Welcome to my portfolio! This project showcases my skills and experience as a front-end developer, with a particular focus on my proficiency in React. React is a powerful JavaScript library for building user interfaces, and I have utilized its features extensively to create a dynamic and interactive portfolio website.
 
 Key Features and Technologies Used
+
 1  React Components:
 I have organized the application into reusable and modular components, making the codebase more maintainable and scalable. Each section of the website, such as the navbar, about me, education, skills, and contact forms, is implemented as a separate component.
 

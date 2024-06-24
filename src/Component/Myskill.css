@@ -1,0 +1,101 @@
+.Myskills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.Myskills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    min-width: 400px;
+    width: 100%;
+}
+
+.Myskills-title {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    color: white;
+    width: 100%;
+}
+
+.box {
+    width: 350px;
+    height: 350px;
+    background-color: #1a1a1a;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.Myskill-profile {
+    border-radius: 50%;
+    width: 50%;
+    height: 60%;
+    background-size: cover;
+}
+
+.box:hover {
+    background-color: #f1c40f;
+}
+
+.box h1 {
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    /* .Myskills {
+        width: 100%;
+        overflow-x: hidden;
+       
+    } */
+    .box {
+        width: 150px;
+        height: 150px;
+    }
+    .Myskill-profile {
+        width: 50%;
+        height: 50%;
+    }
+    .box h1 {
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .Myskills {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .Myskills-container {
+        padding: 20px;
+    }
+    .box {
+        width: 120px;
+        height: 120px;
+        margin-right: 10px;
+    }
+    .Myskill-profile {
+        width: 50%;
+        height: 50%;
+    }
+    .box h1 {
+        font-size: 1rem;
+        margin: 0;
+    }
+    .Myskills-title {
+        font-size: 2.5rem;
+    }
+}

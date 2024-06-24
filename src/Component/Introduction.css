@@ -1,0 +1,257 @@
+
+.introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #121212;
+    color: #fff;
+    padding: 0 20px;
+ }
+.AI{
+    width: 100%;
+    height: 500px;
+    opacity: 0.9;
+    border-radius: 50%;
+  
+    
+}
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    animation: fadeIn 2s ease-out;
+    
+}
+
+.intro-text-container {
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.intro-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: slideIn 1s forwards, fadeInOut 8s infinite alternate; /* Added fadeInOut animation */
+}
+
+
+.intro-text {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.intro-name {
+    display: inline-block;
+    background-image: linear-gradient(45deg, #ff6b6b, #f0e130);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientText 3s infinite;
+}
+
+.intro-description {
+    font-size: 1.2rem;
+    opacity: 0;
+    animation: fadeIn 2s 1s forwards;
+}
+
+.intro-photo-container {
+    max-width: 500px;
+    width: 100%;
+    max-height: 1200px;
+    animation: photoSlideIn 1.5s forwards, photoLoop 10s infinite; /* Added photoLoop animation */
+}
+
+.intro-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    animation: photoFadeIn 1.5s 0.5s forwards, photoLoop 10s infinite; 
+}
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes gradientText {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes photoFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes photoSlideIn {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.home-logo{
+    justify-content: space-between;
+    display: flex;
+    position: absolute; 
+    bottom: 4rem;
+    width: 370px;
+}
+
+
+ .home-logo-img{
+    border-radius: 50%;
+    border: 2px solid wheat;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #121212;
+}
+.btn{
+    margin-top: 10%;
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.btn:hover{
+    background:#f1c40ff6;
+}
+
+@media (max-width: 768px) {
+    /* body{
+        overflow-x: hidden;
+    } */
+.introduction {
+    overflow-x: hidden;
+    width: 100%;
+}
+    .intro-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+      
+    }
+
+    .intro-text-container {
+        margin-right: 0;
+    }
+
+    .intro-photo-container {
+        max-width: 300px;
+       
+    }
+.intro-photo{
+    width: 50%;
+    height: 50%;
+}
+    .home-logo {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+      margin-top: 8rem;
+        justify-content: space-evenly;
+        position: relative;
+     overflow-y: hidden;
+    }
+    
+
+    .btn {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 450px) {
+    /* body{
+        overflow-x: hidden;
+    } */
+.introduction {
+    overflow-x: hidden;
+    width: 100%;
+}
+    .intro-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+       
+     
+    }
+
+    .intro-text-container {
+        margin-right: 3%;
+    }
+
+    .intro-photo-container {
+        max-width: 300px;
+       
+    }
+.intro-photo{
+    margin-top: 30%;
+    width: 50%;
+    height: 50%;
+}
+    .home-logo {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+      padding-top: 4rem;
+        justify-content: space-evenly;
+        position: relative;
+     overflow-y: hidden;
+    }
+    
+    .intro-description {
+        font-size: 1.2rem;
+            animation: fadeIn 2s 1s forwards;
+            display: inline-flex;
+            flex-wrap: wrap;
+            max-width: 100%;
+    }
+
+    .btn {
+        margin-top: 5%;
+    }
+}
